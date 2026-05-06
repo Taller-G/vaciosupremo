@@ -25,6 +25,25 @@
         </div>
       </section>
 
+      <section class="card" style="margin-top: 24px;">
+        <h2>Calculator</h2>
+        <form id="calculator-form" class="form">
+          <label class="label" for="operand-a">First number</label>
+          <input id="operand-a" name="operand-a" class="input" type="number" required />
+          <label class="label" for="operand-b">Second number</label>
+          <input id="operand-b" name="operand-b" class="input" type="number" required />
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <button class="button" type="submit" name="operation" value="add">Add</button>
+            <button class="button" type="submit" name="operation" value="subtract">Subtract</button>
+          </div>
+        </form>
+
+        <div class="result">
+          <div class="result__label">Result</div>
+          <output id="calculator-output" class="result__output" aria-live="polite"></output>
+        </div>
+      </section>
+
       <footer class="footer">
         <a href="https://github.com/" target="_blank" rel="noreferrer">Project docs</a>
       </footer>
